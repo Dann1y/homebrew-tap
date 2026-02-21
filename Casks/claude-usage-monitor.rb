@@ -11,6 +11,12 @@ cask "claude-usage-monitor" do
 
   app "Claude Usage Monitor.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Claude Usage Monitor.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.ClaudeUsageMonitor.plist",
   ]
