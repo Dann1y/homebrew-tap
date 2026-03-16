@@ -1,6 +1,6 @@
 cask "claude-usage-monitor" do
   version "1.5.0"
-  sha256 "09d4c4a3034ded6cd80e72b3483e9c0b161c42edbc873a5b48dbc5bf8ef1eb07"
+  sha256 "ddf3d2fce1735d5b38f2fbb218f1cebe2b47266c5cf282413455dd05168d39d2"
 
   url "https://github.com/Dann1y/claude-usage-monitor/releases/download/v#{version}/ClaudeUsageMonitor.app.zip"
   name "Claude Usage Monitor"
